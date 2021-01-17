@@ -1,0 +1,38 @@
+#+title:  Bayesian AB Test
+#+author: Bartek
+#+date:   2021-01-19
+
+
+* Dataset
+
+
+[[https://www.kaggle.com/yufengsui/mobile-games-ab-testing][Mobile Games: A/B Testing]]
+
+#+begin_src python
+  import pandas as pd
+  from tabulate import tabulate
+
+  df = pd.read_csv("..//data/cookie_cats.csv")
+  return(tabulate(df.head(), headers="keys", tablefmt="orgtbl"))
+#+end_src
+
+
+
+#+RESULTS:
+: |    |   userid | version   |   sum_gamerounds | retention_1   | retention_7   |
+: |----+----------+-----------+------------------+---------------+---------------|
+: |  0 |      116 | gate_30   |                3 | False         | False         |
+: |  1 |      337 | gate_30   |               38 | True          | False         |
+: |  2 |      377 | gate_40   |              165 | True          | False         |
+: |  3 |      483 | gate_40   |                1 | False         | False         |
+: |  4 |      488 | gate_40   |              179 | True          | True          |
+None
+* * * * * * 
+
+
+#+begin_src python
+  return(tabulate(df.head(), headers="keys", tablefmt="orgtbl"))
+  
+#+end_src
+
+#+RESULTS:
