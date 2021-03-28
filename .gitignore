@@ -1,4 +1,4 @@
-data/*
+workdir/data/*
 **/\#*
 **/.\#*
 **/.DS_Store
